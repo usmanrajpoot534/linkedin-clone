@@ -1,3 +1,4 @@
+import { Avatar } from '@mui/material';
 import React from 'react';
 import './HeaderOption.css';
 
@@ -5,7 +6,8 @@ function HeaderOption(props) {
     return (
         <div className='headerOption'>
             {props.icon && <props.icon className='headerOption-icon' />}
-            <h3 className='headerOption-title'>{props.title}</h3>
+            {props.avatar && <Avatar className='headerOption-icon' src={props.avatar} />}
+            <h4 className='headerOption-title'>{props.title}</h4>
         </div>
     )
 }

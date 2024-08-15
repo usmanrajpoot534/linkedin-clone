@@ -46,9 +46,15 @@
 }
 
 .headerOption:hover {
-    color: black;
+    color: #017eb4;
 }
 
 .header-right {
     display: flex;
+}
+
+.headerOption-icon {
+    object-fit: contain;
+    height: 24px !important;
+    width: 24px !important;
 }
