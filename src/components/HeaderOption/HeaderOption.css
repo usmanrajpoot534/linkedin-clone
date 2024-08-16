@@ -6,3 +6,13 @@
     color: gray;
     cursor: pointer;
 }
+
+.headerOption:hover {
+    color: #017eb4;
+}
+
+.headerOption-icon {
+    object-fit: contain;
+    height: 24px !important;
+    width: 24px !important;
+}

@@ -36,25 +36,6 @@
     background: none;
 }
 
-.headerOption {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 20px;
-    color: gray;
-    cursor: pointer;
-}
-
-.headerOption:hover {
-    color: #017eb4;
-}
-
 .header-right {
     display: flex;
-}
-
-.headerOption-icon {
-    object-fit: contain;
-    height: 24px !important;
-    width: 24px !important;
 }
