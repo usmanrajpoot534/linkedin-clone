@@ -1,9 +1,8 @@
 .post {
     background-color: white;
     padding: 12px;
-    margin-bottom: 12spx;
     border-radius: 8px;
-    margin-top: 16px;
+    margin-bottom: 8px;
 }
 
 .post-header {
@@ -30,5 +29,21 @@
 
 .post-footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+
+.post-time {
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.timeIcon {
+    margin-right: 4px;
+    height: 12px !important;
+    width: 12px !important;
+}
+
+.post-time>small {
+    font-size: 12px;
 }

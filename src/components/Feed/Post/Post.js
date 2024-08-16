@@ -14,6 +14,10 @@ function Post(props) {
                     <p>{props.description}</p>
                 </div>
             </div>
+            {/* <div className='post-time'>
+                <props.timeIcon className='timeIcon' />
+                <small>{(props.time)?.toDate().toLocaleString()}</small>
+            </div> */}
             <div className='post-body'>
                 <p>{props.message}</p>
             </div>

@@ -14,7 +14,7 @@ function Sidebar() {
         <div className='sidebar'>
             <div className='sidebar-top'>
                 <img className='sidebar-image' src='https://kruschecompany.com/wp-content/uploads/2022/09/Hero-image-for-analysis-of-international-Flutter-developer-salary-ranges-with-data-covering-Germany-Switzerland-United-Kingdom-Eastern-Europe-India-and-USA.jpg' alt='' />
-                <Avatar className='sidebar-avatar' />
+                <Avatar className='sidebar-avatar' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkZTK04q5MAb3xxGj9xiBt-rOefqwu5X4jtg&s' />
                 <h2>Usman Arif</h2>
                 <h4>usmanarif534@gmail.com</h4>
             </div>
