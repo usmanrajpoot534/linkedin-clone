@@ -6,4 +6,5 @@
 
 .app-body {
     display: flex;
+    margin: 16px;
 }
