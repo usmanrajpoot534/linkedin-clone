@@ -1,0 +1,10 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f2ef;
+}
+
+.home-body {
+    display: flex;
+    margin: 16px;
+}

@@ -1,7 +1,7 @@
 import { CalendarViewDay, CreateOutlined, EventNote, History, Image, Subscriptions } from '@mui/icons-material';
 import { addDoc, collection, onSnapshot, orderBy, query, serverTimestamp } from "firebase/firestore";
 import React, { useEffect, useState } from 'react';
-import { db } from '../../firebase/firebase';
+import { firestore } from '../../firebase/firebase';
 import './Feed.css';
 import InputOption from './InputOption/InputOption';
 import Post from './Post/Post';
@@ -11,7 +11,7 @@ function Feed() {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        const postsRef = collection(db, 'posts');
+        const postsRef = collection(firestore, 'posts');
         const q = query(postsRef, orderBy('timestamp', 'desc'));
 
         const unsubscribe = onSnapshot(q, (snapshot) => {
@@ -28,7 +28,7 @@ function Feed() {
     const sendPost = async (e) => {
         e.preventDefault();
         try {
-            addDoc(collection(db, 'posts'), {
+            addDoc(collection(firestore, 'posts'), {
                 userName: 'Usman Arif',
                 userProfile: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkZTK04q5MAb3xxGj9xiBt-rOefqwu5X4jtg&s',
                 description: 'testing',
